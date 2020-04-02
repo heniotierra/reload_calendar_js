@@ -54,17 +54,13 @@ const selectDate = (selectedDate) => {
 };
 
 const selectDateRange = () => {
-  const currentMonth = state.getCurrentMonth();
-  const currentYear = state.getCurrentYear();
   const selectedDates = state.getSelectedDates();
   if (selectedDates.length === 2) {
     let toSort = [...selectedDates];
     toSort = toSort.sort((a, b) => a - b);
     let left = toSort[0];
     while (++left < toSort[1]) {
-      if (![0,6].includes(getDayOfWeek(currentYear, currentMonth, left))) {
-        toSort.push(left);
-      }
+      toSort.push(left);
     }
     toSort = toSort.sort((a, b) => a - b);
     state.setSelectedDateRange([...toSort]);
