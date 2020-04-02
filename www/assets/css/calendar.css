@@ -63,8 +63,10 @@
 
 .calendar-title {
   margin-top: 20px;
+  margin-left: 10px;
   font-size: 18px;
   font-weight: 800;
+  color: rgb(82, 79, 79);
 }
 
 .calendar-navigation-controls {
