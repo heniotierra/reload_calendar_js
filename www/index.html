@@ -48,7 +48,10 @@
               </div>
             </div>
           </div>
-          <div class="modal" id="calendar-modal">
+          <div class="modal"
+            id="calendar-modal"
+            touchstart="input.swipe.startTouch(e)"
+            touchmove="input.swipe.moveTouch(e, () => setModalShow(false))">
             <div class="modal__inner">
               <div class="o-flex-grid w-100" onswipe="">
                 <div class="o-flex-grid--item w-5">

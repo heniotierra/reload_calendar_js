@@ -2,6 +2,7 @@ const {
   getMonth,
   getYear,
 } = require("date-fns");
+require("./lib/input");
 require("./lib/state");
 require("./lib/calendar");
 require("./lib/schedule");
