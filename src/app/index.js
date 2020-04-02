@@ -20,7 +20,7 @@ if (window.cordova) {
     init();
   }, false);
 } else {
-  window.addEventListener("load",()=>{  
+  window.addEventListener("load", ()=>{  
     init();
   }, false);
 }
